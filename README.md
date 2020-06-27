@@ -1,21 +1,18 @@
 # csv-processor
 
-> An awesome project based on Ts.ED framework
+> Project to handle large csv-files and import the data to mongodb
+> **Important!** project requires docker and yarn.
 
-See [Ts.ED](https://tsed.io) project for more information.
 
-## Build setup
-
-> **Important!** Ts.ED requires Node >= 10, Express >= 4 and TypeScript >= 3.
+## Development setup
 
 ```batch
 # install dependencies
 $ yarn install
 
-# serve
-$ yarn start
+# run mongo and mongo-express
+$ docker-compose up
 
-# build for production
-$ yarn build
-$ yarn start:prod
+# start server
+$ yarn start
 ```
