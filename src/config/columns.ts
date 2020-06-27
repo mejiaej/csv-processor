@@ -1,12 +1,12 @@
 export enum CsvColumns {
-  Uuid = 'UUID',
-  Vin = 'VIN',
-  Make = 'Make',
-  Model = 'Model',
-  Mileage = 'Mileage',
-  Year = 'Year',
-  Price = 'Price',
-  ZipCode = 'ZipCode',
+  Uuid = 'uuid',
+  Vin = 'vin',
+  Make = 'make',
+  Model = 'model',
+  Mileage = 'mileage',
+  Year = 'year',
+  Price = 'price',
+  ZipCode = 'zipCode',
   CreateDate = 'createdate',
   UpdateDate = 'updatedate'
 };
