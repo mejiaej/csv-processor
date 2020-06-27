@@ -1,0 +1,21 @@
+server:
+  build:
+    context: .
+    dockerfile: ./Dockerfile
+    args:
+      - http_proxy
+      - https_proxy
+      - no_proxy
+  image: 'csv-processor/server:latest'
+  ports:
+    - '8081:8081'
+  stdin_open: true
+  tty: true
+  depends_on:
+    - mongodb
+  environment:
+    MONGOSE_URL: mongodb://mongodb:27017/dealership
+    MONGO_HOST: mongodb
+    MONGO_PORT: 27017
+  networks:
+    - mongodb-network
