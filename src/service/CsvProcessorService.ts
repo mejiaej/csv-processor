@@ -36,7 +36,6 @@ export class CsvProcessorService {
           this.saveCarsInBulk(newCars);
           newCars = [];
         }
-        // console.log(`rowCunt:${rowCount}`);
         fs.unlinkSync(filePath);
       });
   }
